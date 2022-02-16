@@ -1,6 +1,10 @@
+@use "presets" as *;
+@use "mixins" as *;
+
 .navbar-inverse {
   background-color: $color-deep-dark;
   border-color: transparent;
+  margin-bottom: 0;
 
   .navbar-nav {
     > li > a {

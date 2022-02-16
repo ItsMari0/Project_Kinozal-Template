@@ -1,4 +1,8 @@
+@use "mixins" as *;
+@use "presets" as *;
+
 .header {
+  margin-bottom: $gap-xl;
 }
 
 .header-logo {

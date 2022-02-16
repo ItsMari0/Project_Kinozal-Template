@@ -1,3 +1,6 @@
+@use "mixins" as *;
+@use "presets" as *;
+
 html {
   font-size: $font-size;
   overflow-y: scroll;
