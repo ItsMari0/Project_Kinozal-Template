@@ -100,22 +100,166 @@
 
       <div class="site-search panel panel-info">
         <div class="panel panel-heading">Поиск</div>
-        <div class="panel-body">PanelContent</div>
+        <div class="panel-body">
+          <form action="search.php">
+            <div class="input-group input-group-lg">
+              <input class="form-control" type="search" placeholder="Поиск по сайту">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
       </div>
 
       <div class="user-login panel panel-info">
         <div class="panel panel-heading">Пользователь</div>
-        <div class="panel-body">PanelContent</div>
+        <div class="panel-body">
+          <div>
+            <!-- Nav tabs -->
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+
+              <li role="presentation" class="active"><a href="#user-login-sidebar" aria-controls="user-login-sidebar"
+                  role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-log-in"></span>
+                </a></li>
+              <li role="presentation">
+                <a href="#user-registration-sidebar" aria-controls="user-registration-sidebar" role="tab"
+                  data-toggle="tab">
+                  <span class="glyphicon glyphicon-user"></span>
+                </a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="user-login__content tab-content">
+
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login-sidebar">
+                <form action="login.php">
+
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Пароль">
+                  </div>
+
+                  <button class="btn btn-default btn-lg btn-block" type="submit">Вход</button>
+
+                </form>
+
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="user-registration-sidebar">
+                <form action="login.php">
+
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Пароль">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="email" placeholder="Email">
+                  </div>
+
+                  <button class="btn btn-default btn-lg btn-block" type="submit">Регистрация</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="site-news panel panel-info">
-        <div class="panel panel-heading">Новости сайта</div>
-        <div class="panel-body">PanelContent</div>
+        <div class="panel-heading">Новости сайта</div>
+        <div class="panel-body">
+
+          <div class="site-news-item">
+            <div class="site-news-item__thumbnail thumbnail">
+              <img class="site-news-item__image" src="assets/img/75x75.png" alt="poster">
+            </div>
+            <div class="site-news-item__title">
+              <a class="site-news-item__item__link" href="">Мы запустили новый сервис - </a>
+            </div>
+            <div class="site-news-item__date">5 декабря 2016</div>
+          </div>
+
+          <div class="site-news-item">
+            <div class="site-news-item__thumbnail thumbnail">
+              <img class="site-news-item__image" src="assets/img/75x75.png" alt="poster">
+            </div>
+            <div class="site-news-item__title">
+              <a class="site-news-item__item__link" href="">На сайте добавлен новый функционал</a>
+            </div>
+            <div class="site-news-item__date">6 декабря 2016</div>
+          </div>
+
+          <div class="site-news-item">
+            <div class="site-news-item__thumbnail thumbnail">
+              <img class="site-news-item__image" src="assets/img/75x75.png" alt="poster">
+            </div>
+            <div class="site-news-item__title">
+              <a class="site-news-item__item__link" href="">Скорость скачивания</a>
+            </div>
+            <div class="site-news-item__date">7 декабря 2016</div>
+          </div>
+
+          <div class="site-news-item">
+            <div class="site-news-item__thumbnail thumbnail">
+              <img class="site-news-item__image" src="assets/img/75x75.png" alt="poster">
+            </div>
+            <div class="site-news-item__title">
+              <a class="site-news-item__item__link" href="">Оптимизирована производительность сервера</a>
+            </div>
+            <div class="site-news-item__date">8 декабря 2016</div>
+          </div>
+
+          <div class="site-news-item">
+            <div class="site-news-item__thumbnail thumbnail">
+              <img class="site-news-item__image" src="assets/img/75x75.png" alt="poster">
+            </div>
+            <div class="site-news-item__title">
+              <a class="site-news-item__item__link" href="">
+                Количество пользователей </a>
+            </div>
+            <div class="site-news-item__date">9 декабря 2016</div>
+          </div>
+
+        </div>
       </div>
 
       <div class="top-films panel panel-info">
-        <div class="panel panel-heading">Рейтинг фильмов</div>
-        <div class="panel-body">PanelContent</div>
+        <div class="panel-heading">Рейтинг фильмов</div>
+        <div class="top-films__body panel-body">
+          <div class="top-films__list list-group">
+            <a href="#" class="top-films__item list-group-item">Марсианин
+              <span class="top-films__badge badge">8.9</span></a>
+            <a href="#" class="top-films__item list-group-item">Иллюзия обмана 2
+              <span class="top-films__badge badge">8.8</span></a>
+            <a href="#" class="top-films__item list-group-item">Из машины
+              <span class="top-films__badge badge">8.5</span></a>
+            <a href="#" class="top-films__item list-group-item">Люси
+              <span class="top-films__badge badge">8.2</span></a>
+            <a href="#" class="top-films__item list-group-item">Выхода нет
+              <span class="top-films__badge badge">8.0</span></a>
+            <a href="#" class="top-films__item list-group-item">Стражи галактики
+              <span class="top-films__badge badge">7.9</span></a>
+            <a href="#" class="top-films__item list-group-item">Человек муравей
+              <span class="top-films__badge badge">7.7</span></a>
+            <a href="#" class="top-films__item list-group-item">Месть от кутюр
+              <span class="top-films__badge badge">7.5</span></a>
+            <a href="#" class="top-films__item list-group-item">Люди Икс
+              <span class="top-films__badge badge">7.4</span></a>
+            <a href="#" class="top-films__item list-group-item">Занесло
+              <span class="top-films__badge badge">7.3</span></a>
+            <a href="#" class="top-films__item list-group-item">Дочь Бога
+              <span class="top-films__badge badge">7.2</span></a>
+          </div>
+        </div>
       </div>
     </aside>
 
