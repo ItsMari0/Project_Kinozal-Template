@@ -5,10 +5,12 @@ html {
   font-size: $font-size;
   overflow-y: scroll;
 }
+
 body {
   font-size: $font-size;
   font-family: $font-main;
 }
+
 a {
   color: $color-primary;
   &:hover,
@@ -17,6 +19,71 @@ a {
     color: $color-accent;
   }
 }
+
 h1 {
+  font-size: 3rem;
   font-family: $font-header;
+  margin: -$gap-md 0 1em;
+
+  @include xs-min {
+    font-size: 3rem;
+  }
+
+  @include xs {
+    font-size: 2rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid $color-accent-light;
+    margin: 0.85em 0 0 $gap;
+  }
+}
+
+h2 {
+  font-family: $font-header;
+  @include xs-min {
+    font-size: 2.5rem;
+    margin: $gap * 4 0 $gap * 3 $gap * 3;
+  }
+  @include xs {
+    font-size: 1.75rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+    border-bottom: 3px solid $color-accent-light;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid $color-accent-light;
+    margin: 0.85em 0 0 $gap;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+}
+
+$font-size-h4: $font-size * 1.125;
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
 }
