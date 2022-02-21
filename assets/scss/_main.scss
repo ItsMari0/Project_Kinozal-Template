@@ -1,79 +1,65 @@
 @use "presets" as *;
 @use "mixins" as *;
-
 .main {
-  margin-bottom: $gap-xl;
-
-  .site-search {
-    margin-bottom: $gap * 3;
-  }
-
-  .user-login {
-    margin-bottom: $gap * 4;
-  }
+    margin-bottom: $gap-xl;
+    .site-search {
+        margin-bottom: $gap * 3;
+    }
+    .user-login {
+        margin-bottom: $gap * 4;
+    }
 }
 
 .new-films,
 .top-week {
-  &-row {
-    padding-left: -$gap-sm;
-    padding-right: -$gap-sm;
-    margin-bottom: -$gap;
-  }
-
-  &-item {
-    padding-left: $gap-sm;
-    padding-right: $gap-sm;
-    margin-bottom: $gap;
-
-    &__thumbnail {
-      margin-bottom: 0;
+    &-row {
+        padding-left: -$gap-sm;
+        padding-right: -$gap-sm;
+        margin-bottom: -$gap;
     }
-
-    &__title {
-      @include text-shortener;
+    &-item {
+        padding-left: $gap-sm;
+        padding-right: $gap-sm;
+        margin-bottom: $gap;
+        &__thumbnail {
+            margin-bottom: 0;
+        }
+        &__title {
+            @include text-shortener;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: bold;
+        }
     }
-  }
 }
 
 .new-films-item__caption,
 .top-week-item__caption {
-  text-align: center;
+    text-align: center;
 }
 
 .new-films-item__item,
 .top-week-item__item {
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 1rem;
-  font-weight: bold;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .new-films-item__image,
 .top-week-item__image {
-  width: 100%;
-}
-
-.new-films-item__title,
-.top-week-item__title {
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 1rem;
-  font-weight: bold;
+    width: 100%;
 }
 
 .film-news-item__news {
-  text-align: justify;
+    text-align: justify;
 }
 
 .film-news-item__button {
-  margin-bottom: 30px;
-  float: right;
-  transition: background-color 0.25s;
+    margin-bottom: 30px;
+    float: right;
+    transition: background-color 0.25s;
 }
