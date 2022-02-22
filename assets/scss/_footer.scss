@@ -1,37 +1,36 @@
 @use "presets" as *;
 @use "mixins" as *;
 .footer {
-    background-color: #232323;
-    padding-top: $gap * 3;
-    color: #d5d5d5;
+  background-color: #232323;
+  padding-top: $gap * 3;
+  color: #d5d5d5;
 }
 
-.container-footer {
-    padding-left: $gap;
-    padding-right: $gap;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*.container-fluid {
+  padding-left: $gap;
+  padding-right: $gap;
+  margin-left: auto;
+  margin-right: auto;
+}*/
 
 .footer {
-    ul {
-        padding: 0;
-        list-style: none;
-    }
-    a {
-        color: #6f6f6f;
-    }
-    a:hover {
-        color: $color-white;
-    }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    color: #6f6f6f;
+  }
+  a:hover {
+    color: $color-white;
+  }
 }
 
-.footer-author {
-    text-align: center;
-    margin: 20px;
-    padding-bottom: 25px;
-    a {
-        color: #d5d5d5;
-        font-weight: 700;
-    }
+.footer-author-text {
+  text-align: center;
+  margin: 20px 0;
+  & a {
+    color: #d5d5d5;
+    font-weight: 700;
+  }
 }

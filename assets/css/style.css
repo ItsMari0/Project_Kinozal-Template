@@ -64,6 +64,7 @@
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  margin-bottom: 0;
 }
 
 html {
@@ -118,10 +119,6 @@ h2::after {
 
 h3 {
   font-size: 1rem;
-}
-
-h4 {
-  font-size: 18px;
 }
 
 section {
@@ -379,13 +376,12 @@ section {
   color: #d5d5d5;
 }
 
-.container-footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/*.container-fluid {
+  padding-left: $gap;
+  padding-right: $gap;
   margin-left: auto;
   margin-right: auto;
-}
-
+}*/
 .footer ul {
   padding: 0;
   list-style: none;
@@ -397,12 +393,11 @@ section {
   color: #ffffff;
 }
 
-.footer-author {
+.footer-author-text {
   text-align: center;
-  margin: 20px;
-  padding-bottom: 25px;
+  margin: 20px 0;
 }
-.footer-author a {
+.footer-author-text a {
   color: #d5d5d5;
   font-weight: 700;
 }
