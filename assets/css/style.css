@@ -218,7 +218,8 @@ section {
 }
 
 .new-films-item__image,
-.top-week-item__image {
+.top-week-item__image,
+.film-news-item__image {
   width: 100%;
 }
 
@@ -375,13 +376,6 @@ section {
   padding-top: 45px;
   color: #d5d5d5;
 }
-
-/*.container-fluid {
-  padding-left: $gap;
-  padding-right: $gap;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 .footer ul {
   padding: 0;
   list-style: none;
@@ -392,7 +386,6 @@ section {
 .footer a:hover {
   color: #ffffff;
 }
-
 .footer-author-text {
   text-align: center;
   margin: 20px 0;
@@ -428,6 +421,14 @@ section {
     margin: 5px 0 5px 5px;
   }
 }
+@media (max-width: 991.8px) {
+  .panel-body {
+    margin-top: 0;
+  }
+  .p-20 {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -439,13 +440,21 @@ section {
   .navbar-right {
     margin-top: 0;
   }
+  .panel-body {
+    margin-top: 0;
+  }
 }
 @media (max-width: 575.8px) {
   h1 {
     font-size: 2rem;
+    padding-top: 10px;
   }
   h2 {
     font-size: 1.75rem;
+    margin: 45px 0 30px 45px;
+  }
+  h3 {
+    font-size: 1.25rem;
   }
   .header-logo__title {
     font-size: 2.5rem;
