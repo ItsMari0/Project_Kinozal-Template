@@ -244,6 +244,33 @@ section {
   background-color: #df8a13;
 }
 
+.film-info {
+  font-size: 1.2em;
+}
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.film-info__wrapper {
+  white-space: nowrap;
+}
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.well {
+  border-color: #d5d5d5;
+  background-color: #f4f4f4;
+}
+
+.embed-responsive {
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
 .left-sidebar {
   margin-bottom: 80px;
 }
@@ -397,6 +424,7 @@ section {
 @media (min-width: 576px) {
   h1 {
     font-size: 3rem;
+    margin: -10px 0 1em;
   }
   h2 {
     font-size: 2.5rem;

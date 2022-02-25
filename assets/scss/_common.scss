@@ -25,6 +25,7 @@ h1 {
     margin: -$gap-md 0 1em;
     @include xs-min {
         font-size: 3rem;
+        margin: -10px 0 1em;
     }
     @include xs {
         font-size: 2rem;
